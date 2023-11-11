@@ -1,17 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Data of Social</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin: 0;
+        }
+
+        #random-dataset {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to Data of Social</h1>
 
     <!-- Display Random Dataset -->
     <div id="random-dataset">
-        <h2>Random Dataset</h2>
-        <p>Here's a random dataset for you:</p>
+        <h2>Explore Your Social Data</h2>
+        <p>Discover and interact with a variety of datasets. Here's a random dataset for you:</p>
         <p><strong>Dataset Name:</strong> Sample Dataset</p>
         <p><strong>Description:</strong> This is a sample dataset for demonstration purposes.</p>
+        <p>Feel free to take action:</p>
         <button onclick="createDataset()">Create Your Dataset</button>
         <button onclick="postToConnections()">Post to Connections</button>
         <button onclick="displayWireFeed()">Display Wire Feed</button>

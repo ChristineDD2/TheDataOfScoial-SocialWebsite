@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome to Data of Social</h1>
+
+    <!-- Display Random Dataset -->
+    <div id="random-dataset">
+        <h2>Random Dataset</h2>
+        <p>Here's a random dataset for you:</p>
+        <p><strong>Dataset Name:</strong> Sample Dataset</p>
+        <p><strong>Description:</strong> This is a sample dataset for demonstration purposes.</p>
+        <button onclick="createDataset()">Create Your Dataset</button>
+        <button onclick="postToConnections()">Post to Connections</button>
+        <button onclick="displayWireFeed()">Display Wire Feed</button>
+    </div>
+
+    <script>
+        // Function to create a dataset
+        function createDataset() {
+            // Redirect to the create_data_set.html page or handle dataset creation
+            window.location.href = "create_data_set.html";
+        }
+
+        // Function to post to connections
+        function postToConnections() {
+            // Redirect to a connections or posting page
+            window.location.href = "connections.html";
+        }
+
+        // Function to display wire feed
+        function displayWireFeed() {
+            // Redirect to a wire feed display page
+            window.location.href = "wire_feed.html";
+        }
+    </script>
+</body>
+</html>

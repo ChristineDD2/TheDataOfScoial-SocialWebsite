@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Sheets</title>
+</head>
+<body>
+    <head>
+        <style>
+            .header {
+                background-color: #333;
+                color: #fff;
+                padding: 10px;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .header-box {
+                border: 2px solid #fff;
+                padding: 10px;
+                margin: 5px;
+                text-align: center;
+            }
+
+            .header-box a {
+                text-decoration: none;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-box">
+                <a href="home.html"><h2>Home</h2></a>
+            </div>
+            <div class="header-box">
+                <a href="login.html"><h2>Login</h2></a>
+            </div>
+            <div class="header-box">
+                <a href="datasheets.html"><h2>Datasheets</h2></a>
+            </div>
+            <div class="header-box">
+                <a href="predictions.html"><h2>Predictions</h2></a>
+            </div>
+            <div class="header-box">
+                <a href="connections.html"><h2>Connections</h2></a>
+            </div>
+        </div>
+        <h1>The Data</h1>
+        <h1>OF</h1>
+        <h1>Social</h1>
+        <h1>Data Sheets</h1>
+
+        <!-- Datasheet Upload Section -->
+        <div id="datasheet-upload">
+            <h2>Upload Your Datasheet</h2>
+            <p>Share your data with the community by uploading your datasheets. Supported file formats include .xlsx, .csv, and .pdf.</p>
+            <form enctype="multipart/form-data" action="upload.php" method="post">
+                <input type="file" name="datasheet" accept=".xlsx, .csv, .pdf"> <!-- Allow specific file types -->
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+
+        <!-- Datasheet Display Section -->
+        <div id="datasheet-display">
+            <h2>Browse and Analyze Datasheets</h2>
+            <p>Discover a wide range of datasheets shared by the community. Dive into various data sets, visualize trends, and gain insights into social data. Explore data in a user-friendly format.</p>
+            <!-- Datasheets from the user or other users can be displayed here -->
+        </div>
+
+        <!-- Create Your Own Data Set Section -->
+        <div id="create-data-set">
+            <h2>Create Your Own Data Set</h2>
+            <p>Have a unique dataset you want to share or analyze? Use our "Create Your Own Data Set" application to input your data into a table format. You can add labels, plots, and more to make your data meaningful and insightful.</p>
+            <button type="button" onclick="location.href='create_data_set.html'">Create Your Data Set</button>
+        </div>
+    </body>
+</html>
+

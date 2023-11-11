@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>The Data OF Social</title>
+    <style>
+        body {
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .header-box {
+            border: 2px solid #fff;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .header-box a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* Added styles for full-width comments section */
+        #comment-container {
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            margin: 0; /* Remove default margin */
+            padding: 20px; /* Add padding for better readability */
+        }
+
+        /* Added styles for border outline */
+        h1, h2, h3, p, li {
+            border: 1px solid black;
+            padding: 10px; /* Add padding for better spacing */
+            margin: 10px 0; /* Add margin for better spacing */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-box">
+            <a href="home.html"><h2>Home</h2></a>
+        </div>
+        <div class="header-box">
+            <a href="login.html"><h2>Login</h2></a>
+        </div>
+        <div class="header-box">
+            <a href="datasheets.html"><h2>Datasheets</h2></a>
+        </div>
+        <div class="header-box">
+            <a href="predictions.html"><h2>Predictions</h2></a>
+        </div>
+        <div class="header-box">
+            <a href="connections.html"><h2>Connections</h2></a>
+        </div>
+    </div>
+
+    <h1>The Data</h1>
+    <h1>OF</h1>
+    <h1>Social</h1>
+
+    <p>The data of social is a website to provide a social space of all kinds. Anything is accepted, since we know words and interactions do not negatively affect our emotions or ability to withdraw from non-instinctive behavior. We are not cave people anymore after the cave people survived the asteroid that hit a billion years ago! Data of Social is providing a social space and a data analytical view of all the social data scientists can obtain on social data! Create your own social data form or yes or no poll for all connected on the website! Browse anonymously with no email or phone number or create an account with login details to save datasheets and create a social pedestrian! I hope you enjoy Social of Data.</p>
+
+    <h2>Discover the World of Social Data</h2>
+    <p>Explore the rich world of social interactions and data analysis:</p>
+
+    <h3>Features:</h3>
+    <ul>
+        <li>Create custom data forms</li>
+        <li>Participate in polls</li>
+        <li>Analyze social data</li>
+        <li>Enjoy complete anonymity</li>
+        <li>Create an account for additional features</li>
+    </ul>
+
+    <h2>Comments</h2>
+    <div id="comment-container">
+        <!-- Existing comments will be displayed here -->
+    </div>
+</body>
+</html>
+
+
+    <div id="user-input">
+        <input type="text" id="username" width="300" height="300" placeholder="Enter your username">
+        <textarea id="comment" placeholder="Write your comment"></textarea>
+        <button onclick="postComment()">Post Comment</button>
+    </div>
+
+    <script>
+        function postComment() {
+            var username = document.getElementById("username").value;
+            var commentText = document.getElementById("comment").value;
+
+            if (username.trim() !== "" && commentText.trim() !== "") {
+                var commentDiv = document.createElement("div");
+                commentDiv.className = "comment";
+                commentDiv.innerHTML = "<strong>" + username + ":</strong> " + commentText;
+
+                var commentContainer = document.getElementById("comment-container");
+                commentContainer.appendChild(commentDiv);
+
+                // Clear input fields
+                document.getElementById("username").value = "";
+                document.getElementById("comment").value = "";
+            }
+        }
+    </script>
+    </body>
+    </html>

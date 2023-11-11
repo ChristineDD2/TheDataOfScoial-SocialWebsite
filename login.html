@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page - The Data of Social</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .header-box {
+            border: 2px solid #fff;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .header-box a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        h1 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        #login-form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #connections {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-box">
+            <a href="home.html"><h2>Home</h2></a>
+        </div>
+        <div class="header-box">
+            <a href="login.html"><h2>Login</h2></a>
+        </div>
+        <div class="header-box">
+            <a href="datasheets.html"><h2>Datasheets</h2></a>
+        </div>
+        <div class="header-box">
+            <a href="predictions.html"><h2>Predictions</h2></a>
+        </div>
+        <div class="header-box">
+            <a href="connections.html"><h2>Connections</h2></a>
+        </div>
+    </div>
+
+    <h1>The Data</h1>
+    <h1>OF</h1>
+    <h1>Social</h1>
+
+    <h1>Login to Your Social Space</h1>
+
+    <div id="login-form">
+        <p>Welcome back! Log in to access your personalized social experience on The Data of Social.</p>
+        <form method="post" action="login_process.php">
+            <label for="emailOrPhone">Email or Phone Number:</label>
+            <input type="text" id="emailOrPhone" name="emailOrPhone" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Connections Section -->
+    <div id="connections">
+        <h2>Your Connections</h2>
+        <p>Explore and connect with others in the vibrant community of The Data of Social. Here is your list of current connections on the website:</p>
+        <ul>
+            <li>Connection 1</li>
+            <li>Connection 2</li>
+            <li>Connection 3</li>
+            <!-- Add more connections here as needed -->
+        </ul>
+    </div>
+</body>
+</html>
+
+
+            <button type="button" id="browse-connections">Browse Connections</button>
+            <button type="button" id="end-connection">End Connection</button>
+        </div>
+    </body>
+</html>
